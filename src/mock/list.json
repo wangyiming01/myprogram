@@ -1,0 +1,12 @@
+{
+"res_code":0,
+"res_error":"",
+"res_body":{
+	"data":[
+		{"id":1,"title":"商品1111","price":111,"img":"图片11111"},
+		{"id":2,"title":"商品222","price":222,"img":"图片222"},
+		{"id":3,"title":"商品333","price":333,"img":"图片333"},
+		{"id":4,"title":"商品444","price":444,"img":"图片444"}
+	]
+}
+}

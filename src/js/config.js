@@ -1,0 +1,19 @@
+require.config({
+	baseUrl:"/",
+	paths:{
+		jquery:"/myProject/src/lib/jquery/jquery-1.12.4",
+		cookie:"/myProject/src/lib/jquery_plugins/jquery.cookie",
+		zoom:"/myProject/src/lib/jquery_plugins/jquery.elevateZoom-3.0.8.min",
+		carousel:"/myProject/src/lib/jquery_plugins/jquery.xmcarousel",
+		template:"/myProject/src/lib/artTemplate/template",
+		load:"/myProject/src/js/loadHeaderFooter"
+	},
+	shim:{
+		carousel:{
+			deps:["jquery"]
+		},
+		zoom:{
+			deps:["jquery"]
+		},
+	}
+})
