@@ -20,8 +20,7 @@ define(["jquery","cookie"],function(){//定义一个模块，要做的事情是�
 						html+=`<div>${curr[0]}</div>`;
 					})
 					$(".suggest").show().html(html)
-				}
-				
+				}				
 			})
 		})		
 		$(".wrap .left").click(function(){
