@@ -29,6 +29,9 @@ define(["jquery","cookie"],function(){//定义一个模块，要做的事情是�
 		$(".wrap .center").click(function(){
 			location="/myProject/src/html/register.html"
 		})
+		$(".right .header_btn2 ").click(function(){
+				location="/myProject/src/html/pay.html"
+			})
 		}
 
 	});		

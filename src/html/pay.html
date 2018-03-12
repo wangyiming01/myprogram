@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="/myProject/src/css/list.css" />
-		<script src="/myProject/src/lib/requirejs/require.js" data-main="/myProject/src/js/list.js"></script>
+		<link rel="stylesheet" href="/myProject/src/css/pay.css" />
+		<script src="/myProject/src/lib/requirejs/require.js" data-main="/myProject/src/js/pay.js"></script>
 	</head>
 	<body>
 <!--nav-->
@@ -22,57 +22,45 @@
 	<li>星月菩提</li>
 	<li>凤眼菩提</li>
 </div>
-<!--banner-->
-<div class="banner">
-	<img src="/myProject/src/images/5.jpg"
-</div>
-<!--template_box-->
-<div class="template_box"></div>
-<script type="text/html" id="template">
-	{{each pictures as picture}}
-	<div class="pic_bigbox">
-		<div class="id">❤喜欢<span>{{picture.id}}人购买</span></div>
-		<div class="img"><img src="{{picture.img}}"></div>
-		<div class="title">{{picture.title}}</div>
-		<div class="price">{{picture.price}}元<span>{{picture.oldprice}}元</span></div>		
-	</div>
+<!--table-->
+<table class="cart_table">
+	<thead>
+		<tr>
+			<td><label ><input type="checkbox" class="ck_all" /></label></td>
+			<td>编号</td>
+			<td>图片</td>
+			<td>标题</td>
+			<td>单价</td>
+			<td>数量</td>
+			<td>小计</td>
+			<td>操作</td>
+		</tr>
+	</thead>
+	<tbody>
+		
+	</tbody>
+	<tfoot>
+		<tr>
+			<td>合计</td>
+			<td colspan="7">0.00</td>
+		</tr>
+	</tfoot>
+</table>
+<!--用魔板引擎-->
+<script type="text/html" id="cart_template">
+	{{each products as prod}}
+		<tr>
+			<td><label ><input type="checkbox" class="ck_prod" /></label></td>
+			<td>{{prod.id}}</td>
+			<td class="img"><img src="{{prod.img}}" /></td>
+			<td>{{prod.title}}</td>
+			<td>{{prod.price}}</td>
+			<td><button class="minus">-</button><input type="text" class="amount" size="2" value="{{prod.amount}}" /><button class="add">+</button></td>
+			<td class="sub">{{(prod.amount*prod.price).toFixed(2)}}</td>
+			<td><a href="javascript:void(0)" class="del">删除</a></td>
+		</tr>
 	{{/each}}
 </script>
-<div class="handle">
-	<div class="pages">
-		<i><</i>
-		<i>1</i>
-		<i>2</i>
-		<i>3</i>
-		<i>4</i>
-		<i>></i>
-	</div>
-	<fieldset id="">
-		<legend>孤品推荐</legend>
-	</fieldset>
-</div>
-<div class="smallcarousel">
-	<ul class="ul">
-		<li class="li">
-			<img src="/myProject/src/images/listfile/0028.jpg"  />
-			<p>小叶紫檀影子纹手串</p>
-		</li>
-		<li class="li">
-			<img src="/myProject/src/images/listfile/0029.jpg"  />
-			<p>极品海南黄花梨老料手串</p>
-		</li>
-		<li class="li">
-			<img src="/myProject/src/images/listfile/0028.jpg"  />
-			<p>小叶紫檀满金星手串</p>
-		</li>
-	</ul>
-	<div class="circle">
-		<i></i>
-		<i></i>
-		<i></i>
-		<i></i>
-	</div>
-</div>
 <!--link-->
 <div class="link">
 	<div class="middlebox">
