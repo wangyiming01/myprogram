@@ -34,7 +34,7 @@ require(["/myProject/src/js/config.js"],function(){//找到我们定义的那个
 				console.log(this.price)
 			});
 			$(".right .header_btn2 ").text(sum).click(function(){
-				location="/myProject/src/html/pay.html"
+				location="/myProject/src/html/cart.html"
 			})
 		})
 			function exist(id,products){
