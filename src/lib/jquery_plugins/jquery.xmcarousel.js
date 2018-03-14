@@ -176,10 +176,11 @@
 		}
 	};
 	// 即该方法可以通过 jQuery 对象的实例来调用   $()
-	$.fn.carousel = function({imgs, width, height,duration}){
-		this.each(function(){
-			let c = new Carousel({imgs, width, height,duration})
-			c.init($(this));
-		});
-	}
+		$.fn.extend({
+		carousel : function(options){
+			this.each(function(index, element){
+				new Carousel(options).init($(element));
+			});
+		}
+	});
 }(jQuery));

@@ -4,7 +4,7 @@ require(["/myProject/src/js/config.js"], function(){
 			location="/myProject/src/html/list.html"
 		})
 		$(".banner").carousel({
-		imgs : [
+		imgs:[
 			{src:"/myProject/src/images/5.jpg", href:"#"},
 			{src:"/myProject/src/images/1111.jpg", href:"#"},
 			{src:"/myProject/src/images/002.jpg", href:"#"},
@@ -14,8 +14,7 @@ require(["/myProject/src/js/config.js"], function(){
 		width: 1263,
 		height: 557,
 		duration: 2000,
-		type:"slide",
-		isAutoPlay:false
+		type:"fade",
 	});
 	});
 });
