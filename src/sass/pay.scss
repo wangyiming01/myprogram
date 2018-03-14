@@ -398,6 +398,77 @@ $width:100%;
         
     }
 }
+/*title*/
+.title{
+   width:1210px;
+   height:46px;
+   margin:0 auto; 
+   margin-top:17px;
+   margin-bottom:23px;
+   img{
+    width:1159px;
+   height:46px;
+   border:1px solid #dfdedd;
+   border-radius: 5px;
+   }
+}
+/*main*/
+.main{
+    width:1204px;
+    height:330px;
+    border:1px solid #c9caca;
+    border-radius: 10px;
+    margin:0 auto; 
+    .bigbox{
+        width:614px;
+        height:313px;
+         h1{
+        font-weight:normal;
+        font-size:18px;
+        color:59576c;
+        width:1204px;
+        padding-left:27px;
+        line-height: 56px;
+        height:56px;
+        border-bottom:1px solid #59576c;
+    }
+    .txt1{
+        width:283px;
+        height:50px;
+        border:1px solid #c9caca;
+        border-radius:5px;
+        margin-left:27px;
+        margin-top:19px;
+        padding-left:15px;
+        outline:none;
+    }
+    .txt2{
+        @extend .txt1;
+        margin-left:15px;
+    }
+    .txt3{
+        @extend .txt1;
+        width:145px;
+    }
+    .txt4{
+        @extend .txt1;
+        width: 150px;
+    }
+    .txt5{
+        @extend .txt1;
+        width: 227px;
+    }
+    textarea{
+        width: 581px;
+        height: 82px;
+        margin-left:27px;
+        border-radius:5px;
+        margin-top:13px;
+        padding-top:15px;
+    }
+    }
+   
+}
 /*link*/
 .link{
         width:$width;
@@ -535,237 +606,7 @@ $width:100%;
              }       
 }
 }
-/*detailbox*/
-.detailbox{
-    width:$width;
-    height:580px;
-    .bigbox{
-        width:1210px;
-        height:580px;
-        margin:0 auto;
-        .top{
-            width:1210px;
-            height:45px;
-            line-height: 45px;
-            padding-left:25px;
-            a{
-                color:#888888;
-                font-size:15px;
-                &:hover{
-                    color:#b9a98b;
-                }
-            }
-        }
-        .main{
-            height:536px;
-            width:1210px;
-            margin:0 auto;
-            .left{
-                width:847px;
-                height:536px;
-                border:1px solid #e1e1e1;
-                border-top-left-radius: 10px;
-                border-bottom-left-radius: 10px;
-                border-right:none;
-                float: left;
-            }
-            .right{               
-                height:536px;
-                border:1px solid #e1e1e1;
-                width:363px;
-                border-top-right-radius:10px;
-                border-bottom-right-radius:10px;
-                float: left;
-                position: relative;
-                .btn1{
-                    background:white;
-                    width:66px;
-                    height:22px;
-                    border:1px solid #e1e1e1;
-                    border-radius:5px;
-                    margin-left:267px;
-                    margin-top:18px;
-                    outline:none;
-                }
-                h2{
-                    margin-left:25px;
-                    height:59px;
-                    width:309px;
-                    font-size:25px;
-                    color:#000000;
-                    text-align:center;
-                    border-bottom:1px solid #f5f3ed;
-                }
-                .oldprice{
-                    i{
-                       text-decoration: line-through; 
-                    }
-                    
-                }
-                p{
-                    padding-left:45px;
-                    color:#807b59;
-                    font-size:13px;
-                    line-height:29px;
-                    input{
-                        width:54px;
-                        height:22px;
-                        border:1px solid #e1e1e1;
-                        border-radius: 5px;
-                        text-align:center;
-                    }
-                    span{
-                        border:1px solid #d7474e;
-                        margin-left:10px;
-                        border-radius:3px;
-                    }
-                }
-                .btn2{
-                    width: 141px;
-                    height: 36px;
-                    background:#e40911;
-                    color:white;
-                    outline:none;
-                    border:none;
-                    border-radius:5px;
-                    margin-left:20px;
-                    margin-top:29px;
-                    margin-bottom:30px;
-                    margin-right:15px;
-                }
-                .amount{ 
-                      padding-left:25px;
-                      margin-left:25px;                     
-                      width:309px;
-                      height:40px;
-                      color:#807b59;
-                      line-height: 29px;
-                      font-size:13px;
-                      border-bottom:1px solid #f5f3ed;
-                      input{
-                          width:51px;
-                          height:21px;
-                          margin-left:3px;
-                          margin-right:3px;
-                          text-align:center;                           
-                      }
-                }
-                .specification{
-                    padding-left:25px;
-                    line-height: 29px;
-                     font-size:13px;
-                     padding-left:none;
-                     margin-left:25px;
-                     border-radius:5px;
-                     width:309px;
-                     margin-top:30px;
-                     color:#807b59;
-                     border-top:1px solid #f5f3ed;
-                     span{
-                         border-radius:5px;
-                         float: right;
-                         margin-right:135px;
-                         display:block;
-                         width: 102px;            
-                         height: 23px;
-                         text-align: center;
-                         line-height: 23px;
-                         border:1px solid red;
-                     }
-                }
-                .btn3{
-                    width: 138px;
-                    height: 35px;
-                    background:#f19600;
-                    color:white;
-                    outline:none;
-                    border:none;
-                    border-radius:5px;
-                     margin-top:29px;
-                    margin-bottom:30px;
-                }
-                .btn4{
-                    width: 138px;
-                    height: 35px;
-                    background:#f19600;
-                    color:white;
-                    outline:none;
-                    border:none;
-                    border-radius:5px;
-                     margin-top:29px;
-                    margin-bottom:30px;
-                }
-                .estimate{
-                   i{
-                       margin-left:100px;
-                       color:#c4b68d;                   
-                       }
-                }
-                .price{
-                    i{
-                      color:#e40911;   
-                    }
-                   
-                }
-                .last{
-                    float: left;
-                    img{
-                        margin-top:6px;
-                    }
-                }
-                .inset1{
-                    position: absolute;
-                    top:22px;
-                    left:270px;
-                }
-                .pure_pic{
-                    img{
-                        width:315px;
-                        height:76px;
-                    }
-                }
-                .inset2{
-                    position: absolute;
-                    top:192px;
-                    left:81px;
-                }
-                .inset3{
-                    position: absolute;
-                    top:102px;
-                    left:125px;
-                }
-            }
-        }
-    }
-}
-/*top_pic*/
-.top_pic{
-    width:1210px;
-    height:41px;
-    margin:0 auto;
-    border:1px solid #e1e1e1;
-    border-radius:5px;
-    margin-top:10px;
-    font-size:14px;
-    line-height: 41px;
-    padding-left:30px;
-    a{
-         color:#888888;   
-    }
-}
-/*pic*/
-.pic{
-    width:1210px;
-    height:11590px;
-    margin:0 auto;
-    padding-left:5px;
-    border:1px solid #e1e1e1;
-    border-bottom-left-radius:5px;
-    border-bottom-right-radius:5px;
-    img:nth-child(1){
-        margin-bottom:12px;
-    }
-}
+
 /*footer*/
 $width:100%;
 .footer{

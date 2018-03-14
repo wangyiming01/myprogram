@@ -14,6 +14,13 @@ require(["/myProject/src/js/config.js"],function(){
 			_amount=1;
 			$("input",".amount").val(_amount);
 			return false;
-		})				
+		})	
+		$(".right .btn3").click(function(){	
+			$(".right .btn4").show();
+			$(".right .btn3").animate({"width":0,"height":0,"top":-171,"left":247},3000,function(){
+				$(".right .btn3").empty();
+			})			
+		})
+
 	})
 })

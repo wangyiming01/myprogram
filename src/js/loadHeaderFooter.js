@@ -22,7 +22,12 @@ define(["jquery","cookie"],function(){//定义一个模块，要做的事情是�
 					$(".suggest").show().html(html)
 				}				
 			})
-		})		
+		})	
+//		$.cookie.json = true;
+//			let user = $.cookie("loginUser")[0].username;
+//			if (user) {
+//				$(".right .header_btn2 ").text(user)
+//			}
 		$(".wrap .left").click(function(){
 			location="/myProject/src/html/login.html"
 		})

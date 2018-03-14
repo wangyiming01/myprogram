@@ -403,9 +403,10 @@ $width:100%;
     width:$width;
     height:557px;
     margin:0 auto;
+    overflow: hidden;
     img{
         width:$width;
-        height:557px;
+        height:557px;      
     }
 }
 /*content*/
